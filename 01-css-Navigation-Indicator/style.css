@@ -166,10 +166,10 @@ body {
 }
 
 .navigation ul li:nth-child(4).active ~ .indicator::before {
-background: #f53b57;
+background: #0fbcf9;
 }
 
 .navigation ul li:nth-child(5).active ~ .indicator::before {
-	background: #f53b57;
+	background: #ffa801;
 }
 

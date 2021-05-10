@@ -19,31 +19,31 @@
 <body>
 	<div class="navigation">
 		<ul>
-			<li class="list">
+			<li class="list" data-color='#f53b57'>
 				<a href="#">
 					<span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
 					<span class="title">خانه</span>
 				</a>
 			</li>
-			<li class="list">
+			<li class="list" data-color='#3c40c6'>
 				<a href="#">
 					<span class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
 					<span class="title">پروفایل</span>
 				</a>
 			</li>
-			<li class="list">
+			<li class="list" data-color='#05c46b'>
 				<a href="#">
 					<span class="icon"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
 					<span class="title" id='title3'>پیام ها</span>
 				</a>
 			</li>
-			<li class="list">
+			<li class="list" data-color='#0fbcf9'>
 				<a href="#">
 					<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
 					<span class="title">راهنمایی</span>
 				</a>
 			</li>
-			<li class="list">
+			<li class="list" data-color='#ffa801'>
 				<a href="#">
 					<span class="icon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
 					<span class="title">تنظیمات</span>
@@ -56,7 +56,7 @@
 	<script>
 		let list = document.querySelectorAll('.list');
 		for (let i=0;i<list.length;i++) {
-			list[i].onmouseover = () =>{
+			list[i].onclick = () =>{
 				let j = 0;
 				while (j<list.length){
 					list[j++].className = 'list';
@@ -64,6 +64,16 @@
 				list[i].className = 'list active'
 			}
 		}
+
+
+
+		list.forEach(elements=>{
+			elements.addEventListener("mouseenter",function(event){
+				let bg = document.querySelector('body');
+				let color = event.target.getAttribute('data-color');
+				bg.style.backgroundColor = color;
+			})
+		})
 	</script>
 </body>
 </html>
