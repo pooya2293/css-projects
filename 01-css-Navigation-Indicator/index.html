@@ -66,12 +66,13 @@
 		}
 
 
+				
 
 		list.forEach(elements=>{
-			elements.addEventListener("mouseenter",function(event){
+			elements.addEventListener("mouseenter",(event)=>{
 				let bg = document.querySelector('body');
 				let color = event.target.getAttribute('data-color');
-				bg.style.backgroundColor = color;
+				console.log(color);
 			})
 		})
 	</script>
