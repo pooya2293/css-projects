@@ -19,33 +19,33 @@
 <body>
 	<div class="navigation">
 		<ul>
-			<li class="list active" data-color='#f53b57'>
+			<li class="list active" >
 				<a href="#">
-					<span class="icon" id='icon1'><i class="fa fa-home" aria-hidden="true"></i></span>
+					<span class="icon" id='icon1'><i class="fa fa-home" aria-hidden="true" data-color='#f53b57'></i></span>
 					<span class="title">خانه</span>
 				</a>
 			</li>
-			<li class="list" data-color='#3c40c6'>
+			<li class="list" >
 				<a href="#">
-					<span class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+					<span class="icon"><i class="fa fa-user-o" aria-hidden="true" data-color='#3c40c6'></i></span>
 					<span class="title">پروفایل</span>
 				</a>
 			</li>
-			<li class="list" data-color='#05c46b'>
+			<li class="list" >
 				<a href="#">
-					<span class="icon"><i class="fa fa-comment-o" aria-hidden="true"></i></span>
+					<span class="icon"><i class="fa fa-comment-o" aria-hidden="true" data-color='#05c46b'></i></span>
 					<span class="title" id='title3'>پیام ها</span>
 				</a>
 			</li>
-			<li class="list" data-color='#0fbcf9'>
+			<li class="list" >
 				<a href="#">
-					<span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
+					<span class="icon"><i class="fa fa-info" aria-hidden="true" data-color='#0fbcf9'></i></span>
 					<span class="title">راهنمایی</span>
 				</a>
 			</li>
-			<li class="list" data-color='#ffa801'>
+			<li class="list">
 				<a href="#">
-					<span class="icon"><i class="fa fa-wrench" aria-hidden="true"></i></span>
+					<span class="icon"><i class="fa fa-wrench" aria-hidden="true" data-color='#ffa801'></i></span>
 					<span class="title">تنظیمات</span>
 				</a>
 			</li>
@@ -66,7 +66,7 @@
 		}
 
 		 list.forEach(lmnt=>{
-			lmnt.addEventListener("mouseenter",(event)=>{
+			lmnt.addEventListener("click",(event)=>{
 					let bg = document.querySelector('body');
 					let color = event.target.getAttribute('data-color');
 					bg.style.backgroundColor = color;
