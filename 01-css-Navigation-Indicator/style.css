@@ -63,6 +63,10 @@ body {
 	color: #fff;
 }
 
+.navigation ul li.reamin a .icon {
+	color: #333;
+}
+
 .navigation ul li a .icon .fa {
 	font-size: 22px;
 
@@ -128,6 +132,8 @@ body {
 	border-radius: 50%;
 	transition: 0.5s;
 }
+
+
 
 /* indicator part 1 */
 
