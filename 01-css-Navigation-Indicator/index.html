@@ -19,33 +19,33 @@
 <body>
 	<div class="navigation">
 		<ul>
-			<li class="list active" >
-				<a href="#">
-					<span class="icon" id='icon1'><i class="fa fa-home" aria-hidden="true" data-color='#f53b57'></i></span>
+			<li class="list active" data-color='#f53b57'>
+				<a href="#" data-color='#f53b57'>
+					<span class="icon" id='icon1' data-color='#f53b57'><i class="fa fa-home" aria-hidden="true" data-color='#f53b57'></i></span>
 					<span class="title">خانه</span>
 				</a>
 			</li>
 			<li class="list" >
-				<a href="#">
-					<span class="icon"><i class="fa fa-user-o" aria-hidden="true" data-color='#3c40c6'></i></span>
+				<a href="#" data-color='#3c40c6'>
+					<span class="icon" data-color='#3c40c6'><i class="fa fa-user-o" aria-hidden="true" data-color='#3c40c6'></i></span>
 					<span class="title">پروفایل</span>
 				</a>
 			</li>
-			<li class="list" >
-				<a href="#">
-					<span class="icon"><i class="fa fa-comment-o" aria-hidden="true" data-color='#05c46b'></i></span>
+			<li class="list" data-color='#05c46b'>
+				<a href="#" data-color='#05c46b'>
+					<span class="icon" data-color='#05c46b'><i class="fa fa-comment-o" aria-hidden="true" data-color='#05c46b'></i></span>
 					<span class="title" id='title3'>پیام ها</span>
 				</a>
 			</li>
-			<li class="list" >
-				<a href="#">
-					<span class="icon"><i class="fa fa-info" aria-hidden="true" data-color='#0fbcf9'></i></span>
+			<li class="list" data-color='#0fbcf9'>
+				<a href="#" data-color='#0fbcf9'>
+					<span class="icon" data-color='#0fbcf9'><i class="fa fa-info" aria-hidden="true" data-color='#0fbcf9'></i></span>
 					<span class="title">راهنمایی</span>
 				</a>
 			</li>
-			<li class="list">
-				<a href="#">
-					<span class="icon"><i class="fa fa-wrench" aria-hidden="true" data-color='#ffa801'></i></span>
+			<li class="list" data-color='#ffa801'>
+				<a href="#" data-color='#ffa801'>
+					<span class="icon" data-color='#ffa801'><i class="fa fa-wrench" aria-hidden="true" data-color='#ffa801'></i></span>
 					<span class="title">تنظیمات</span>
 				</a>
 			</li>
@@ -70,6 +70,7 @@
 					let bg = document.querySelector('body');
 					let color = event.target.getAttribute('data-color');
 					bg.style.backgroundColor = color;
+					console.log(event.target);
 				}
 			)
 		})
