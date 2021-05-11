@@ -1,5 +1,19 @@
+/*one*/
 p.ex1 {
 	background-color: #33e70f;
 	min-height: 130px;
 }
-
+/*tow*/
+.container2 img{
+	/*absolute for stick somthing to some where*/
+	position: absolute;
+	top: 210px;
+	left: 20px;
+	height: 50px;
+	width: 50px;
+	z-index: -1;
+}
+/*three*/
+.container3 ul li.active a .icon {
+	color: red;
+}
