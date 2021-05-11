@@ -59,3 +59,32 @@ p.ex1 {
 	visibility: visible;
 	transform: translate(-50%,50%);
 }
+
+/*six*/
+.container6 p::before {
+	content:'Read this -';
+}
+
+.container6 h4::before {
+	content:' ';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	z-index: -1;
+	border-radius: 50px;
+	background-color: yellow;
+}
+
+.container6 h4::after {
+	content:' ';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	z-index: -1;
+	border-radius: 50px;
+	background-color: yellow;
+}
+
+
+/* seven */
+
