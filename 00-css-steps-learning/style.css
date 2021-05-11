@@ -8,7 +8,7 @@ p.ex1 {
 	/*absolute for stick somthing to some where*/
 	position: absolute;
 	top: 210px;
-	left: 20px;
+	left: 200px;
 	height: 50px;
 	width: 50px;
 	z-index: -1;
@@ -23,7 +23,7 @@ p.ex1 {
   height: 100px;
   background-color: yellow;
   border: 1px solid black;
-  transform: translate(20px,10px) ; /* Standard syntax */
+  transform: translate(200px,10px) rotate(16deg); /* Standard syntax */
   /*-ms-transform: translate(10px,10px); /* IE 9 */
 }
 
