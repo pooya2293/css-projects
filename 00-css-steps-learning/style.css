@@ -88,3 +88,6 @@ p.ex1 {
 
 /* seven */
 
+p ~ ul {
+  background: #ff0000;
+}
