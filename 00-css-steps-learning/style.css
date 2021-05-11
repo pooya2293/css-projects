@@ -23,7 +23,7 @@ p.ex1 {
   height: 100px;
   background-color: yellow;
   border: 1px solid black;
-  transform: translate(200px,10px) rotate(16deg) scale(.5, .5) scaleY(2) scaleX(2) skew(20deg, 5deg) ; /* Standard syntax */
+  transform: translate(200px,10px) rotate(16deg) scale(.5, .5) scaleY(2) scaleX(2) skew(20deg, 5deg) matrix(1, -.05, .2, 1, 0, 0) ; /* Standard syntax */
   /*-ms-transform: translate(10px,10px); /* IE 9 */
 }
 
