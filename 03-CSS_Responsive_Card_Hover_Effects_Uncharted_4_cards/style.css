@@ -27,8 +27,8 @@
 
  .container .card {
  	position: relative;
- 	width: 600px;
- 	height: 350px;
+ 	width: auto;
+ 	height: 380px;
  	margin: 20px;
  	display: flex;
  	justify-content: flex-start;
@@ -42,12 +42,14 @@
  	bottom: 20px;
  	left: 50%;
  	transform: translateX(-50%);
- 	height: 350px;
+ 	height: 380px;
  	transition: .5s;
  }
 .container .card:hover img {
-	left: 25%;
-	height: 390px;
+	left: 22%;
+	height: 320px;
+	z-index: 1;
+
 
 }
 
@@ -58,7 +60,7 @@
 	bottom: 1.3em;
 	opacity: 0;
 	visibility: hidden;
-	padding: 20px 20px 20px 40px;
+	padding: 8px 8px 8px 7px;
 	transition: .5s;
 	font-size: .7em;
 }
@@ -91,7 +93,7 @@
 	font-width: 700;
 }
 
-@media (max-width:991px){
+@media (max-width:1190px){
 	.container .card {
 		width: auto;
 		max-width: 600px;
@@ -120,7 +122,10 @@
 	}
 }
 
-@media (max-width:400px){
+@media (max-width:370px){
+	.container .card:hover {
+		height:400px ;
+	}
 	.container .card .content {
 		padding: 30px;
 	}
@@ -131,10 +136,10 @@
 	.container .card:hover img{
 		left: 50%;	
 		height: 200px;
-		bottom: 1em;
+		bottom: -1.5em;
 	}
 	.container .card .content {
-		bottom: 17em;
+		bottom: 10em;
 		font-size:.6em;
 		padding: 10px 10px 0px 20px;
 	}
