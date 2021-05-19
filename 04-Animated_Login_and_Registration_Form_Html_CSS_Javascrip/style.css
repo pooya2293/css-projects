@@ -165,3 +165,16 @@ section .container.active .signupBx .formBx {
 section .container.active .signupBx .imgBx {
 	top: 0;
 }
+
+@media( max-width: 650px ){
+
+	section .container {
+		max-width: 400px;
+	}
+	section .container .imgBx {
+		display: none;
+	}
+	section .container .user .formBx {
+		width: 100%;
+	}
+}
