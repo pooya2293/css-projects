@@ -45,7 +45,7 @@
 
   section .container .user .imgBx {
   	position: relative;
-  	width: 56%;
+  	width: 58%;
   	height: 100%;
   	transition: .5s;
   }
