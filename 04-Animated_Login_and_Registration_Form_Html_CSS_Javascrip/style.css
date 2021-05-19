@@ -1,0 +1,40 @@
+ @import url('https://v1.fontapi.ir/css/Mikhak');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Mikhak', sans-serif;
+}
+
+
+ body {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	text-align: center;
+ 	min-height: 100vh;
+ 	direction: rtl;
+ }
+
+ .container {
+ 	position: relative;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+
+ .container .card {
+ 	position: relative;
+ 	width: auto;
+ 	height: 380px;
+ 	margin: 20px;
+ 	display: flex;
+ 	justify-content: flex-start;
+ 	transition: .5s;
+ 	align-items: center;
+ 	background: linear-gradient(45deg,#1a2f3f,#7094ce);
+ }
+
+ 
