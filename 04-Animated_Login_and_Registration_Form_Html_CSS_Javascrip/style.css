@@ -24,7 +24,7 @@
  section .container {
  	position: relative;
  	width: 800px;
- 	height: 360px;
+ 	height: 500px;
  	background: #fff;
  	box-shadow: 0 15px 50px rgba(0,0,0,0.5);
  }
@@ -117,4 +117,46 @@ section .container .user .formBx .signup a
 	font-weight: 600;
 	text-decoration: none;
 	color: #557eff;
+}
+
+/* SignUp page */
+section .container .signupBx {
+	/* new for me: it disabel every things has clickable  */
+	pointer-events: none;
+
+}
+
+section .container.active .signupBx {
+	pointer-events: initial;
+} 
+
+section .container .signupBx .formBx {
+	top: 100%;
+}
+section .container .signupBx .imgBx {
+	top: -100%;
+	transition: .5s;
+}
+/* Sign in Page */
+section .container .signinBx {
+	top: 0;
+}
+section .container.active .signinBx .formBx {
+	top: 100%;
+}
+
+section .container .signinBx .imgBx {
+	top: 0;
+	transition: 0.5s;
+}
+section .container.active .signinBx .imgBx {
+	top: -100%;
+}
+
+/* active */
+section .container.active .signupBx .formBx {
+	top: 0;
+}
+section .container.active .signupBx .imgBx {
+	top: 0;
 }

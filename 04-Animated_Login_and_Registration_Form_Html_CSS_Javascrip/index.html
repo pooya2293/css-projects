@@ -20,7 +20,7 @@
 	<section>
 		<div class="container">
 			<div class="user signinBx">
-				<div class="imgBx"><img src="./pic/pic1.jpg">
+				<div class="imgBx"><img src="./pic/pic4.jpg">
 				</div>
 					<div class="formBx">
 						<form>
@@ -28,12 +28,31 @@
 							<input type="text" placeholder="نام کاربری" name="">
 							<input type="password" placeholder="رمز ورود" name="">
 							<input type="submit" value="ورود">
-							<p class="signup">ثبت نام نکردی؟<a href="#"> ثبت نام</a></p>
+							<p class="signup">ثبت نام نکردی؟<a href="#" onclick='toggleForm()'> ثبت نام</a></p>
 						</form>
 					</div>
 			</div>
+			<div class="user signupBx">
+					<div class="formBx">
+						<form>
+							<h2>ساختن حساب کاربری</h2>
+							<input type="text" placeholder="نام کاربری" name="">
+							<input type="email" placeholder="ایمیل" name="">
+							<input type="password" placeholder="ساختن پسورد" name="">
+							<input type="password" placeholder="تکرار پسورد" name="">
+							<input type="submit" value="ثبت نام">
+							<p class="signup">قبلا ثبت نام کردم.<a href="#" onclick='toggleForm()'> ورود</a></p>
+						</form>
+					</div>
+				<div class="imgBx"><img src="./pic/pic5.jpg"></div>
+			</div>
 		</div>
 	</section>
-	
+	<script>
+		const toggleForm = ()=>{
+			const container = document.querySelector('.container');
+			container.classList.toggle('active');
+		}
+	</script>
 </body>
 </html>
