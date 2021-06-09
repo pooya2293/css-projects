@@ -17,12 +17,21 @@
 
 // click(item,index)
 function click (item,index) {
-    item.classList.add('active');
-}
     // if (item == active)return
+    // if(activeItem == item) return;
     // if(active)return remove active
-    // item add active
+    if(activeItem){
+        activeItem.classList.remove('active');
+    }
+     // item add active
+    item.classList.add('active');
     // body bg = [index]
+    body.style.backgroundColor = bgBody[index];
+
+}
+    
+    
+   
     // active = item
     // offsetbulb(active)
 
