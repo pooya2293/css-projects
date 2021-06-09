@@ -66,7 +66,7 @@ body {
 }
 
 .menu__item.active {
-	transform: translate3d(0,-0.8em , 0);
+	transform: translate3d(0,-0.8em , 0);/* new */
 }
 
 .menu__item.active::before {
@@ -77,22 +77,22 @@ body {
 .icon {
 	width: 2.6em;
 	height: 2.6em;
-	stroke: white;
-	fill: transparent;
-	stroke-width: 1pt;
-	stroke-miterlimit: 10;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-	stroke-dasharray: 400;
+	stroke: white;/* new */
+	fill: transparent;/* new */
+	stroke-width: 1pt;/* new */
+	stroke-miterlimit: 10;/* new */
+	stroke-linecap: round;/* new */
+	stroke-linejoin: round;/* new */
+	stroke-dasharray: 400;/* new */
 }
 
 .menu__item.active .icon {
-	animation: strok 1.5s reverse ;
+	animation: strok 1.5s reverse ;/* new */
 }
 
 @keyframes stork {
 	100% {
-		stroke-dashoffset: 400;
+		stroke-dashoffset: 400;/* new */
 	}
 }
 
@@ -103,8 +103,8 @@ body {
 	width: 10.9em;
 	height: 2.4em;
 	position: absolute;
-	clip-path: url(#menu);
-	will-change: transform;
+	clip-path: url(#menu);/* new */
+	will-change: transform;/* new */
 	background-color: var(--bgColorMenu);
 	transition: transform var(--timeOut , var(--duration));
 }
