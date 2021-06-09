@@ -16,6 +16,9 @@
 
 
 // click(item,index)
+function click (item,index) {
+    console.log(item,index);
+}
     // if (item == active)return
     // if(active)return remove active
     // item add active
@@ -29,7 +32,10 @@
      // bulb style 3dtransform
      
 // foreach --> buttons
+buttons.forEach((item, index)=> {
     // add eventlistener 
+    item.addEventListener('click',()=>click(item,index))
         // click(item,index)
     
+});
 
