@@ -17,7 +17,7 @@
 
 // click(item,index)
 function click (item,index) {
-    console.log(item,index);
+    item.classList.add('active');
 }
     // if (item == active)return
     // if(active)return remove active
