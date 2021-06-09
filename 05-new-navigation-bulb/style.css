@@ -40,5 +40,46 @@ body {
 
 .menu__item {
 	all: unset;/*new*/
-	
+	flex-grow: 1;
+	z-index: 100;
+	cursor: pointer;
+	position: relative;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	padding: 0.55em 0 0.85em;
+	transition: transform var(--timeOut , var(--duration));
+}
+
+.menu__item::before{
+	content: '';
+	z-index: -1;
+	width: 4.2em;
+	height: 4.2em;
+	border-radius: 50%;
+	position: absolute;
+	/*transform: scale(0);*/
+	background-color: #3ad;
+	transition: background-color var(--duration), transform var(--duration);
+}
+
+.menu__item.active {
+	transform: translate3d(0,-0.8em , 0);
+}
+
+.menu__item.active::before {
+	transform: scale(1);
+	background-color: var(--bgColorItem)
+}
+
+.icon {
+	width: 2.6em;
+	height: 2.6em;
+	stroke: white;
+	fill: transparent;
+	stroke-width: 1pt;
+	stroke-miterlimit: 10;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-dasharray: 400;
 }
