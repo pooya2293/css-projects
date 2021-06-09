@@ -27,12 +27,12 @@ function click (item,index) {
     item.classList.add('active');
     // body bg = [index]
     body.style.backgroundColor = bgBody[index];
-
+    // active = item
+    activeItem = item;
 }
     
     
    
-    // active = item
     // offsetbulb(active)
 
 //offsetbulb(active)
