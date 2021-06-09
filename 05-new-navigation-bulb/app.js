@@ -18,7 +18,7 @@
 // click(item,index)
 function click (item,index) {
     // if (item == active)return
-    // if(activeItem == item) return;
+    if(activeItem == item) return;
     // if(active)return remove active
     if(activeItem){
         activeItem.classList.remove('active');
@@ -29,16 +29,23 @@ function click (item,index) {
     body.style.backgroundColor = bgBody[index];
     // active = item
     activeItem = item;
-}
-    
-    
-   
     // offsetbulb(active)
+    offsetBulb(activeItem);
+}
 
-//offsetbulb(active)
-     // active.cordineate
-     // const left 
-     // bulb style 3dtransform
+//offsetbulb(active)    
+function offsetBulb(activeItem) {
+    // active.cordineate
+    const activeCordinate = activeItem.getBoundingClientRect();
+    // const left 
+    const left = Math.floor(activeCordinate.left - menu.offsetLeft - (bulb.offsetWidth - activeItem.offsetWidth)/2)+'px';
+    // bulb style 3dtransform
+    bulb.style.transform =`translate3d(${left},0,0)` ;
+}  
+   
+offsetBulb(activeItem);
+
+     
      
 // foreach --> buttons
 buttons.forEach((item, index)=> {
